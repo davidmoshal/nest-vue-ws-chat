@@ -9,7 +9,7 @@ import { Server } from 'socket.io';
 import {Injectable} from '@nestjs/common';
 
 @Injectable()
-@WebSocketGateway()
+@WebSocketGateway( { transports: ['websocket'] })
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
   @WebSocketServer()

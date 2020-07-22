@@ -22,14 +22,14 @@
   "dependencies": {
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
-    "@nestjs/platform-express": "^6.0.0",
     "@nestjs/platform-fastify": "^7.3.2",
     "@nestjs/platform-socket.io": "^6.2.0",
     "@nestjs/websockets": "^6.2.0",
     "helmet": "^3.23.3",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
-    "rxjs": "^6.3.3"
+    "rxjs": "^6.3.3",
+    "salita": "^0.12.1"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.0.0",

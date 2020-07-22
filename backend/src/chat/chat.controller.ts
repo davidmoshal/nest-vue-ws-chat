@@ -9,7 +9,8 @@ export class ChatController {
 
     @Get('/')
     async broadcastToClients() {
-        this.chatGateway.server.emit('triggerRest', null);
-        return 2;
+        console.log("broadcastToClients")
+       // this.chatGateway.server.emit('triggerRest', null);
+       // return 2;
     }
 }
