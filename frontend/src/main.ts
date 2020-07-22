@@ -1,0 +1,29 @@
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store/index';
+import VueSocketIOExt from 'vue-socket.io-extended';
+import io from 'socket.io-client';
+
+
+Vue.config.productionTip = false;
+
+// Vue.use(new VueSocketIO({
+//   debug: true,
+//   connection: 'http://localhost:3000',
+//   vuex: {
+//     store,
+//     actionPrefix: "SOCKET_",
+//   }
+// }));
+
+const socket = io('http://127.0.0.1:8080');
+
+Vue.use(VueSocketIOExt, socket, {store});
+
+
+new Vue({
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount('#app');
