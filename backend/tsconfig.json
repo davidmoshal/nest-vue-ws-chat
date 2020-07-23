@@ -1,14 +1,59 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+//    "types": [
+//      "webpack-env"
+//    ],
+    // needed for vue, see: https://vuejs.org/v2/guide/typescript.html
+    "allowJs": true,
+    /* Allow javascript files to be compiled. */
+    "allowSyntheticDefaultImports": true,
+    /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    //"checkJs": true,                       /* Report errors in .js files. */
+    // "composite": true,
     "declaration": true,
-    "removeComments": true,
+    "declarationMap": true,
     "emitDecoratorMetadata": true,
+    /* Enables experimental support for emitting type metadata for decorators. */
+    "esModuleInterop": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    /* Enables experimental support for ES7 decorators. */
+    "forceConsistentCasingInFileNames": true,
+    /* Disallow inconsistently-cased references to the same file. */
+    //"incremental": true,                   /* Enable incremental compilation */
+    "jsx": "preserve",
+    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "lib": [
+      "es2020",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "module": "commonjs",
+    "noImplicitThis": true,
+    // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
+    "resolveJsonModule": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./"
+    "strict": false,
+    "target": "es2020",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "dist"
+  ]
 }

@@ -1,3 +1,17 @@
+<hr>
+DM
+<hr>
+
+IJ:Backend (`working`)
+- "start:dev:dm": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
+```sh
+tsc-watch -p tsconfig.build.json --onSuccess "node dist/main.js
+```
+
+<hr>
+ Orig
+<hr>
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
