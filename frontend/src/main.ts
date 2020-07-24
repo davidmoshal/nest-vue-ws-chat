@@ -1,10 +1,24 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store/index';
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store/index";
+import VueNativeSock from "vue-native-websocket";
 
-import VueNativeSock from 'vue-native-websocket'
-Vue.use(VueNativeSock, 'ws://localhost:8080/api')
+const ws_url: string = (() => {
+  const loc = window.location;
+  let new_uri = "";
+  if (loc.protocol === "https:") {
+    new_uri = "wss:";
+  } else {
+    new_uri = "ws:";
+  }
+  new_uri += "//" + loc.host;
+  new_uri += loc.pathname + "api";
+  console.log({ new_uri });
+  return new_uri;
+})();
+
+Vue.use(VueNativeSock, ws_url);
 
 Vue.config.productionTip = false;
 
@@ -28,9 +42,8 @@ Vue.config.productionTip = false;
 //  reconnectionDelay: 3000, // (Number) how long to initially wait before attempting a new (1000)
 // }
 
-
 new Vue({
-    router,
-    store,
-    render: (h) => h(App),
-}).$mount('#app');
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount("#app");

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "Directory",
+        "name": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend/src",
+        "parent_id": null,
+        "workspaceRoot": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend",
+        "workspacePath": "src",
+        "id": "ruqFl8n0c4WKUIiy"
+    },
+    {
+        "type": "File",
+        "name": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend/package.json",
+        "parent_id": null,
+        "workspaceRoot": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend",
+        "workspacePath": "package.json",
+        "id": "sCQgNtBjkDbeVdqv"
+    },
+    {
+        "type": "File",
+        "name": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend/tsconfig.json",
+        "parent_id": null,
+        "workspaceRoot": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend",
+        "workspacePath": "tsconfig.json",
+        "id": "8LCPz96WBekdUJHr"
+    },
+    {
+        "type": "File",
+        "name": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend/vue.config.js",
+        "parent_id": null,
+        "workspaceRoot": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend",
+        "workspacePath": "vue.config.js",
+        "id": "kzvmRoulIiyB1QGY"
+    },
+    {
+        "type": "File",
+        "name": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend/README.md",
+        "parent_id": null,
+        "workspaceRoot": "/home/davem/au/codebase/2020/nest-vue-ws-chat/frontend",
+        "workspacePath": "README.md",
+        "id": "n6yiAROC9Q0EDIG2"
+    }
+]
